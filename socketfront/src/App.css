@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.messageBox {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    border:  1px solid lightgrey;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.messageTop {
+    padding:20px;
+    background: rgb(44, 42, 42);
+    color:white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.messageList {
+    height: 100%;
+    background: rgb(183, 183, 233);
+    list-style-type: none;
+    padding:15px;
+    overflow-y: auto;
+    transform: rotate(180deg);
+}
+
+.messageList > li {
+    padding: 15px 10px;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    width: 100%;
+    transform: rotate(180deg);
+}
+
+.messageList > li.left {
+    color: rgb(63, 53, 53);
+}
+.messageList > li > .leftUser {
+    background: rgb(27, 192, 214);
+    padding: 7px;
+    border-radius: 15px;
+}
+
+.messageList > li > .rightUser {
+    background: saddlebrown;
+    padding: 7px;
+    border-radius: 15px;
+
+}
+
+.messageList > li.right {
+    text-align: right;
+    color: white;
+}
+
+
+.messageForm {
+    display: flex;
+    justify-content: center;
+}
+
+.messageForm > input {
+    width: 85%;
+}
+
+.messageForm > button {
+    width: 15%;
+}
+
+input {
+    font-size: large;
+    padding: 12px;
+  }
+  
+  button {
+    font-size: large;
+    padding: 12px;
+  }
